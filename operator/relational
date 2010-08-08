@@ -3,7 +3,7 @@ Equal: =?
 To test equality of two values, == is not intuitive: its symbols do not
 include one connoting test, variability, or questioning.  == is unique
 to programming languages: Unicode has no double-equals sign.
-=?  includes both equality (=) and test (?) symbols, so better encodes
+=? includes both equality (=) and test (?) symbols, so better encodes
 both concepts.  ≟ (questioned equal to) is the corresponding single-
 character option for font sizes large enough to legibly display the
 question mark.
