@@ -3,9 +3,9 @@
 find | grep -v '\.git'
 git status
 git add .
-git commit -a -m 'copy summary to readme file'
+git commit -a -m 'shorten lines in the readme'
 git push origin master
-|fmt -w 72
+|fmt -w 72 |sed 's,$,  ,'
 |sort|uniq
 
 for(f in operator/*){
