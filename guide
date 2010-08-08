@@ -10,7 +10,7 @@ find | grep -v '\.git'
 
 git status
 git add .
-git commit -a -m 'add ≟ to discussion and test haskell definition'
+git commit -a -m 'fix readme line length'
 git push origin master
 
 for(f in operator/*){
