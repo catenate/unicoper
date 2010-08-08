@@ -1,0 +1,12 @@
+Bitwise and: ∧
+Bitwise or: ∨
+
+We treat bitwise operators are treated similarly to logical ones:
+instead of & and |, we suggest ∧ (logical and) and ∨ (logical or).
+
+
+Bitwise exclusive-or: ⊻
+
+For bitwise exclusive-or, the commonly-used symbol ^ looks more like ∧
+(and) than ∨ (or), which seems misleading, and does not encode exclusivity,
+as ⊻ (xor) does.

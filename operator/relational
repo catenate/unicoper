@@ -1,0 +1,37 @@
+Equal: =?
+
+To test equality of two values, == is not intuitive: its symbols do not
+include one connoting test, variability, or questioning.  == is unique
+to programming languages: Unicode has no double-equals sign.
+=?  includes both equality (=) and test (?) symbols, so better encodes
+both concepts.  ≟ (questioned equal to) is the corresponding single-
+character option for font sizes large enough to legibly display the
+question mark.
+
+This usage of "=" in these "C-syntax" languages can lead to coding errors.
+A programmer may mistype "if (x = y)" instead of "if (x == y)".
+In C, the former code fragment roughly means "assign y to x, and if the
+new value of x is not zero, execute the statement following".
+The latter code fragment roughly means "if and only if x is equal to y,
+execute the statement following".¹
+ ¹ http://en.wikipedia.org/wiki/Relational_operator
+
+
+Unequal: ≠
+
+In print ≠, meaning not equal to, tests the negated equivalence of two values.¹
+ ¹ http://en.wikipedia.org/wiki/Relational_operator
+
+
+Greater than or equal: ≥
+
+In print ≥, meaning greater than or equal to, tests if the value of the
+left expression is greater than or equal to that of the right.¹
+ ¹ http://en.wikipedia.org/wiki/Relational_operator
+
+
+Less than or equal: ≤
+
+In print ≤, meaning less than or equal to, tests if the value of the
+left expression is less than or equal to that of the right.¹
+ ¹ http://en.wikipedia.org/wiki/Relational_operator

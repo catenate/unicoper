@@ -1,0 +1,13 @@
+/home/jdc/Dropbox/nb/
+/home/jdc/git/rwhaskell/ch1/UnicodeOperators.ℓhs
+find | grep -v '\.git'
+git status
+git add .
+git commit -a -m 'copy summary to readme file'
+git push origin master
+|fmt -w 72
+|sort|uniq
+
+for(f in operator/*){
+	grep : $f | grep -v http | sed -n 's,(^[A-Za-z ]+): ([^.]+),\2 for \1,p' | tr '[A-Z]' '[a-z]' | sed 's/$/,/' | grep -v unicode
+}
