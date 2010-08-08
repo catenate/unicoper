@@ -1,0 +1,2 @@
+%.lhs: %.ℓhs
+	sed -f toascii.sed $stem.ℓhs > $stem.lhs

@@ -5,11 +5,9 @@
 w Newcol Kill Putall Dump dump.acme Exit 
 c          0 New Cut Paste Snarf Sort Zerox Delcol 
 c          1 New Cut Paste Snarf Sort Zerox Delcol 
-f          0           2           0           0   2.0652174 
-          2          45          26           1           0 /home/jdc/git/unicoper/ Del Snarf Get | Look 
-F          1           0          76          76   2.0652174          76 
-          1          55          76           0           1 /home/jdc/git/unicoper/guide Del Snarf Undo Put | Look 
-git status
-git add .
-git commit -a -m 'first commit'
-git push origin master
+f          0           2         107         107   2.0652174 
+          2          45         107           1           0 /home/jdc/git/unicoper/ Del Snarf Get | Look 
+F          1           0           0           0   2.0652174           0 
+          4          51           0           0           1 /home/jdc/git/unicoper/+Errors Del Snarf | Look 
+f          1           1         403         414  61.5217391 
+          1          51         675           0           0 /home/jdc/git/unicoper/guide Del Snarf Undo | Look 

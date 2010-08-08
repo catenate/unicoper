@@ -1,12 +1,17 @@
 /home/jdc/Dropbox/nb/
 /home/jdc/git/rwhaskell/ch1/UnicodeOperators.ℓhs
+cp /usr/local/plan9/lib/keyboard typing/plan9/
+cp /usr/local/plan9/font/times/latin1.7a.font typing/plan9/unicoper.font
+cp /home/jdc/git/rwhaskell/ch1/toascii.sed substitute/haskell/
+cp /home/jdc/git/rwhaskell/ch1/UnicodeOperators.ℓhs define/haskell/UnicodeOperators.ℓhs
 find | grep -v '\.git'
-git status
-git add .
-git commit -a -m 'minor typo'
-git push origin master
 |fmt -w 72 |sed 's,$,  ,'
 |sort|uniq
+
+git status
+git add .
+git commit -a -m 'start Haskell sub and def; copy plan9 keyboard and font'
+git push origin master
 
 for(f in operator/*){
 	grep : $f | grep -v http | sed -n 's,(^[A-Za-z ]+): ([^.]+),\2 for \1,p' | tr '[A-Z]' '[a-z]' | sed 's/$/,/' | grep -v unicode
