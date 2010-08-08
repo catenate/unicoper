@@ -1,0 +1,36 @@
+/home/jdc/git/unicoper
+/usr/local/plan9/font/times/latin1.7a.font
+/usr/local/plan9/font/fixed/unicode.4x6.font
+  0.0000000  59.9218750
+w Newcol Kill Putall Dump acme.dump Exit 
+c          0 New Cut Paste Snarf Sort Zerox Delcol 
+c          1 New Cut Paste Snarf Sort Zerox Delcol 
+f          0           2           0           0   2.0652174 
+          2          45         107           1           0 /home/jdc/git/unicoper/ Del Snarf Get | Look 
+f          0           3           0           0   7.9347826 
+          3          50        1470           0           0 /home/jdc/git/unicoper/README.md Del Snarf | Look 
+F          1           0         513         513   2.0652174         513 
+         15          48         513           0           1 /home/jdc/git/unicoper/+Errors Del Snarf | Look 
+# On branch master
+# Changed but not updated:
+#   (use "git add <file>..." to update what will be committed)
+#   (use "git checkout -- <file>..." to discard changes in working directory)
+#
+#	modified:   guide
+#
+# Untracked files:
+#   (use "git add <file>..." to include in what will be committed)
+#
+#	kanban
+no changes added to commit (use "git add" and/or "git commit -a")
+# On branch master
+# Changes to be committed:
+#   (use "git reset HEAD <file>..." to unstage)
+#
+#	modified:   guide
+#	new file:   kanban
+#
+f          1           1         387         446  55.9782609 
+          1          51         599           0           0 /home/jdc/git/unicoper/guide Del Snarf Undo | Look 
+f          1           4         327         327  98.1521739 
+          4          64         327           0           0 /home/jdc/git/unicoper/kanban Del Snarf Undo | Look 

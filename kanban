@@ -1,0 +1,9 @@
+backlog add substitute/ruby/toascii.sed
+backlog add substitute/ruby/mkfile
+backlog add substitute/go/toascii.sed
+backlog add substitute/go/mkfile
+backlog add substitute/c/toascii.sed
+backlog add substitute/c/mkfile
+backlog add preprocess/haskell/unicoper.hs
+backlog add preprocess/c/unicoper.h
+backlog add format/go/scanner.go
