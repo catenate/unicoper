@@ -1,16 +1,14 @@
 /home/jdc/git/unicoper
 /usr/local/plan9/font/times/latin1.7a.font
 /usr/local/plan9/font/fixed/unicode.4x6.font
-  0.0000000  59.9218750
+  0.0000000  59.8437500
 w Newcol Kill Putall Dump acme.dump Exit 
 c          0 New Cut Paste Snarf Sort Zerox Delcol 
 c          1 New Cut Paste Snarf Sort Zerox Delcol 
-f          0           2           0           0   2.0652174 
-          2          45         107           1           0 /home/jdc/git/unicoper/ Del Snarf Get | Look 
-f          0           3           0           0   7.9347826 
-          3          50        1470           0           0 /home/jdc/git/unicoper/README.md Del Snarf | Look 
-F          1           0         513         513   2.0652174         513 
-         15          48         513           0           1 /home/jdc/git/unicoper/+Errors Del Snarf | Look 
+f          0           1           0           0   2.0652174 
+          1          45         128           1           0 /home/jdc/git/unicoper/ Del Snarf Get | Look 
+F          1           0        1665        1665   2.0652174        1665 
+          2          57        1665           0           1 /home/jdc/git/unicoper/+Errors Del Snarf Undo Put | Look 
 # On branch master
 # Changed but not updated:
 #   (use "git add <file>..." to update what will be committed)
@@ -30,7 +28,69 @@ no changes added to commit (use "git add" and/or "git commit -a")
 #	modified:   guide
 #	new file:   kanban
 #
-f          1           1         387         446  55.9782609 
-          1          51         599           0           0 /home/jdc/git/unicoper/guide Del Snarf Undo | Look 
-f          1           4         327         327  98.1521739 
-          4          64         327           0           0 /home/jdc/git/unicoper/kanban Del Snarf Undo | Look 
+# On branch master
+# Changes to be committed:
+#   (use "git reset HEAD <file>..." to unstage)
+#
+#	modified:   guide
+#	new file:   kanban
+#
+# Untracked files:
+#   (use "git add <file>..." to include in what will be committed)
+#
+#	acme.dump
+# On branch master
+# Changes to be committed:
+#   (use "git reset HEAD <file>..." to unstage)
+#
+#	new file:   acme.dump
+#	modified:   guide
+#	new file:   kanban
+#
+[master b2353d8] add kanban board
+ 3 files changed, 50 insertions(+), 5 deletions(-)
+ create mode 100644 acme.dump
+ create mode 100644 kanban
+To git@github.com:catenate/unicoper.git
+   723f750..b2353d8  master -> master
+61,64d60
+< > (≟) :: (Eq a) ⇒ a → a → Bool
+< > (≟) = (==)
+< > infix 4 ≟
+< 
+diff: exit 1
+# On branch master
+# Changed but not updated:
+#   (use "git add <file>..." to update what will be committed)
+#   (use "git checkout -- <file>..." to discard changes in working directory)
+#
+#	modified:   README.md
+#	modified:   acme.dump
+#	modified:   "define/haskell/UnicodeOperators.\342\204\223hs"
+#	modified:   guide
+#	modified:   kanban
+#	modified:   operator/relational
+#
+no changes added to commit (use "git add" and/or "git commit -a")
+F          1           1         366         377  57.8260870         630 
+          3          60         630           0           1 /home/jdc/git/unicoper/guide Del Snarf Undo Redo Put | Look 
+/home/jdc/Dropbox/nb/
+:, |sort -r
+cp /home/jdc/git/rwhaskell/ch1/UnicodeOperators.ℓhs define/haskell/UnicodeOperators.ℓhs
+cp /home/jdc/git/rwhaskell/ch1/toascii.sed substitute/haskell/
+cp /usr/local/plan9/font/times/latin1.7a.font typing/plan9/unicoper.font
+cp /usr/local/plan9/lib/keyboard typing/plan9/
+find | grep -v '\.git'
+|fmt -w 72 |sed 's,$,  ,'
+|sort|uniq
+
+git status
+git add .
+git commit -a -m 'add ≟ to discussion and test haskell definition'
+git push origin master
+
+for(f in operator/*){
+	grep : $f | grep -v http | sed -n 's,(^[A-Za-z ]+): ([^.]+),\2 for \1,p' | tr '[A-Z]' '[a-z]' | sed 's/$/,/' | grep -v unicode
+}
+f          1           4           0         420  98.1521739 
+          4          64         420           0           0 /home/jdc/git/unicoper/kanban Del Snarf Undo | Look 

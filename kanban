@@ -1,3 +1,5 @@
+complete test ≟ in define/haskell/UnicodeOperators.ℓhs
+complete add ≟ to operator/relational
 backlog add substitute/ruby/toascii.sed
 backlog add substitute/ruby/mkfile
 backlog add substitute/go/toascii.sed

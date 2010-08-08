@@ -11,12 +11,12 @@ family and languages they influenced; encodes methods to use them before
 languages accept them; and provide tips to type UTF-8 characters in  
 various environments (Plan 9).  
 
-We suggest the additional operator symbols − for subtract, × or ·  
-for multiply, ÷ for divide, ↥ for integer exponent, ↑ for real exponent,  
-∧ for bitwise and, ∨ for bitwise or, ⊻ for bitwise exclusive-or, ⋀ for  
-logical and, ⋁ for logical or, =? for equal, ≠ for unequal, ≥ for  
-greater-than or equal, and ≤ for less-than or equal.  (Expect this list  
-to expand.)  
+We suggest the additional operator symbols − for subtract, × or ·
+for multiply, ÷ for divide, ↥ for integer exponent, ↑ for real exponent,
+∧ for bitwise and, ∨ for bitwise or, ⊻ for bitwise exclusive-or, ⋀ for
+logical and, ⋁ for logical or, =? or ≟ for equal, ≠ for unequal, ≥ for
+greater-than or equal, and ≤ for less-than or equal.  (Expect this list
+to expand.)
 
 The methods presented either directly substitute characters in the  
 source text (stream-editor scripts for C, Go, Haskell, and Ruby),  
