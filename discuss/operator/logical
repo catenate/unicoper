@@ -1,0 +1,21 @@
+Boolean
+
+For Boolean logical-and and logical-or, && and || are unique to
+programming languages, so I prefer the forms ⋀ (n-ary logical and)
+and ⋁ (n-ary logical or).  
+
+
+Logical and: ⋀
+
+Reserve ∧ for bitwise operations, after the weight of ⊻, so use ⋀ for
+logical-and.
+
+../wikipedia:/^Logical conjunction/
+
+
+Logical or: ⋁
+
+Reserve ∨ for bitwise operations, after the weight of ⊻, so use ⋁ for
+logical-or.
+
+../wikipedia:/^Logical disjunction/

@@ -1,10 +1,15 @@
+complete transfer text from /home/jdc/Dropbox/nb/unicoper
 complete test ≟ in define/haskell/UnicodeOperators.ℓhs
+complete record tweets in /home/jdc/Dropbox/nb/unicoper
+complete link e.g. discuss/arithmetic:/Exponent/ to wikipedia:/^Knuth's up-arrow notation/
+complete create table of correspondences from Unicode to ASCII to generate sed scripts per language
 complete add ≟ to operator/relational
-backlog add substitute/ruby/toascii.sed
+complete add substitute/ruby/unicoper.sed
+complete add substitute/go/unicoper.sed
+complete add substitute/c/unicoper.sed
+backlog add to keyboard /= as another shortcut to ≠
 backlog add substitute/ruby/mkfile
-backlog add substitute/go/toascii.sed
 backlog add substitute/go/mkfile
-backlog add substitute/c/toascii.sed
 backlog add substitute/c/mkfile
 backlog add preprocess/haskell/unicoper.hs
 backlog add preprocess/c/unicoper.h

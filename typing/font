@@ -1,0 +1,19 @@
+nb unicode math operator symbol code point table font fortress
+Mathematical syntax in Fortress.  Project Fortress community.
+http://projectfortress.sun.com/Projects/Community/wiki/MathSyntaxInFortress
+
+Unicode provides a large collection of mathematical operators; these can
+be found in the code tables¹ Mathematical Operators, Miscellaneous Math
+Symbols-A, Miscellaneous Math Symbols-B, and Supplemental Math
+Operators.  Support for the full collection of symbols is not widespread
+yet, but three fonts offer good coverage:
+ ¹ http://www.unicode.org/charts/
+
+	Code2000: many characters, shareware ($5)
+	http://www.code2000.net/code2000_page.htm
+	
+	Everson Mono: monowidth, shareware (€25 for 3 computers)
+	http://www.evertype.com/emono/
+	
+	Stix fonts: comprehensive, integrated with TeX, probably released later this year
+	http://www.stixfonts.org/

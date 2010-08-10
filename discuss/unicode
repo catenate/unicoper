@@ -1,0 +1,33 @@
+nb unicode math operator symbol code point table font fortress
+../typing/font:/^nb unicode/
+
+
+nb unicode category sm so list
+http://www.fileformat.info/info/unicode/category/Sm/list.htm
+http://www.fileformat.info/info/unicode/category/So/list.htm
+
+
+nb math unicode plain text encode wishlist
+Sargent, M. 20100310.  Unicode nearly plain text encoding of
+mathematics, v3.  Unicode technical note 28.
+http://unicode.org/notes/tn28/UTN28-PlainTextMath-v3.pdf
+
+With a few conventions, Unicode can encode many mathematical expressions in
+readable nearly plain text.  Technically this format is a “lightly marked
+up format”; hence the use of “nearly”.  The format is linear, but it can be
+displayed in built-up presentation form.  … Most mathematical expressions
+can be represented unambiguously in the linear format, from which they can
+be exported to [La]TeX, MathML, C++, and symbolic manipulation programs.
+The linear format borrows notation from TeX for mathematical objects that
+don’t lend themselves well to a mathematical linear notation, e.g., for
+matrices.  A variety of syntax choices can be used for a linear format.
+The choices made in this paper favor a number of criteria: efficient input
+of mathematical formulae, sufficient generality to support high-quality
+mathematical typography, the ability to round trip elegant mathematical
+text at least in a rich-text environment, and a format that resembles a
+real mathematical notation.  Obviously compromises between these goals had
+to be made.  The linear format is useful for 1) inputting mathematical
+expressions,6 2) displaying mathematics by text engines that cannot display
+a built-up format, and 3) computer programs.  For more general storage and
+interchange of math expressions between math-aware programs, MathML and
+other higher-level languages are preferred.

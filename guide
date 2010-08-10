@@ -1,6 +1,6 @@
-/home/jdc/Dropbox/nb/
+/home/jdc/Dropbox/nb/unicoper
 :, |sort -r
-cp /home/jdc/git/rwhaskell/ch1/UnicodeOperators.ℓhs define/haskell/UnicodeOperators.ℓhs
+cp /home/jdc/git/rwhaskell/ch2/Unicoper.hs define/haskell/
 cp /home/jdc/git/rwhaskell/ch1/toascii.sed substitute/haskell/
 cp /usr/local/plan9/font/times/latin1.7a.font typing/plan9/unicoper.font
 cp /usr/local/plan9/lib/keyboard typing/plan9/

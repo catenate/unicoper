@@ -1,0 +1,36 @@
+Subtract: −
+
+../wikipedia:/^Minus: Character codes/
+
+
+Multiply: × or ·
+
+../wikipedia:/^Multiply: Notation and terminology/
+
+
+Divide: ÷
+
+../wikipedia:/^Obelus/
+
+
+Exponentiation
+
+Exponentiation offers a variety of symbols.  ^ suffers from confusion
+with bitwise exclusive-or.  ^^ implies multiple operations, so does not
+scale well to actual repeated exponentiation.  ** also does not scale well,
+but reminds one of multiplication, but only in programming languages,
+since mathematicians do not denote scalar multiplication with * outside
+of programming languages.  Several languages offer a named function,
+usually pow for power, but since it takes options and might need
+qualified with a library name it is not usually succinct.  I prefer
+↑ (up arrow), which scales well in Knuth’s up-arrow notation.¹
+ ¹ ../wikipedia:/^Knuth’s up-arrow notation/
+
+
+Integer exponent: ↥
+Real exponent: ↑
+
+To represent exponentiation with only integer exponents, we use ↥,
+up arrow with lower horizontal bar, in style of floor-function¹ notation.
+Real exponentiation ↑, up arrow, has no lower horizontal bar.
+ ¹ ../wikipedia:/^Floor function/

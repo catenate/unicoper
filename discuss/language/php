@@ -1,0 +1,22 @@
+nb unicode wishlist
+Zakhlestin, A.  20070726.  Unicode vs.  programming languages.
+Alexey Zakhlestin’s blog: Programming for mac and web.
+http://blog.milkfarmsoft.com/2007/07/unicode-vs-programming-languages/
+
+I really-really want to see a programming language, which allows using
+proper unicode symbols for operators.  I mean:
+
+	· instead of *
+	→ instead of ->
+	← instead if <-
+	≠ instrad of !=
+	≤ and ≥ instead of <= and >=
+
+This list can be continued more and more… I perfectly understand the
+roots of current situation and I don’t ask to use ONLY unicode-symbols,
+but I ask language-manufacturers to allow this.
+
+
+nb php implement patch zend wishlist
+Golemon, S.  20070726.  Fun with Unicode.  Still trying to get it all out.
+http://blog.golemon.com/2007/07/fun-with-unicode.html

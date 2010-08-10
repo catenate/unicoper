@@ -1,0 +1,10 @@
+==?	===	rb
+=?	==	c go hs rb
+↑	**	hs
+↥	^	hs
+≟	==	c go hs rb
+≠	!=	c go rb
+≠	/=	hs
+≤	<=	c go hs rb
+≥	>=	c go hs rb
+⊻	^	c go

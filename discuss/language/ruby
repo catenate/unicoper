@@ -1,0 +1,23 @@
+nb ruby unicode relation set wishlist
+Berger, D. -20070119.  Allowing Unicode in the grammar?  Ruby forum:
+Ruby core.
+http://www.ruby-forum.com/topic/94710
+
+Daniel Berger: If I had an initial wishlist, I would keep it small:
+
+	≡ (U+2261)
+	≥ (U+2265)
+	≤ (U+2264)
+	≠ (U+2260)
+
+I'm not suggesting replacing '==', just allowing the Unicode code point
+to mean the same thing (and thus, allowing us to define it in our own
+classes as well).
+
+Nikolai Weibull: It'd be really cool to be able to define additional
+operators at runtime (a patch for this was sent to ruby-talk a while ago
+(2005?), but it never really went anywhere), so that Set could take
+operators like ∉, ⊆, and ⊃.  It's pushing it a bit, but I'd really
+appreciate being able to write stuff like
+
+	puts n if n ∈ (1..100)

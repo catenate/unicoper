@@ -5,10 +5,20 @@
 w Newcol Kill Putall Dump acme.dump Exit 
 c          0 New Cut Paste Snarf Sort Zerox Delcol 
 c          1 New Cut Paste Snarf Sort Zerox Delcol 
-f          0           1           0           0   2.0652174 
-          1          45         128           1           0 /home/jdc/git/unicoper/ Del Snarf Get | Look 
-F          1           0        1665        1665   2.0652174        1665 
-          2          57        1665           0           1 /home/jdc/git/unicoper/+Errors Del Snarf Undo Put | Look 
+f          0           6           0           0   2.0652174 
+          6          52           0           0           0 /home/jdc/Dropbox/nb/unicoper Del Snarf Undo | Look 
+f          0           1          23          23   4.1304348 
+          1          45         127           1           0 /home/jdc/git/unicoper/ Del Snarf Get | Look 
+f          0          64           0           0   6.1956522 
+         64          60           0           1           0 /home/jdc/git/unicoper/define/haskell/ Del Snarf Get | Look 
+f          0          68          96          96  94.0217391 
+         68          53          96           1           0 /home/jdc/git/unicoper/discuss/ Del Snarf Get | Look 
+f          0          69           0           0  96.0869565 
+         69          62          39           1           0 /home/jdc/git/unicoper/discuss/language/ Del Snarf Get | Look 
+f          0          70        1293        1296  98.1521739 
+         70          70        1903           0           0 /home/jdc/git/unicoper/discuss/language/haskell Del Snarf Undo | Look 
+F          1           0        2752        2752   2.0652174        2752 
+          3          48        2752           0           1 /home/jdc/git/unicoper/+Errors Del Snarf | Look 
 # On branch master
 # Changed but not updated:
 #   (use "git add <file>..." to update what will be committed)
@@ -72,25 +82,55 @@ diff: exit 1
 #	modified:   operator/relational
 #
 no changes added to commit (use "git add" and/or "git commit -a")
-F          1           1         366         377  57.8260870         630 
-          3          60         630           0           1 /home/jdc/git/unicoper/guide Del Snarf Undo Redo Put | Look 
-/home/jdc/Dropbox/nb/
-:, |sort -r
-cp /home/jdc/git/rwhaskell/ch1/UnicodeOperators.ℓhs define/haskell/UnicodeOperators.ℓhs
-cp /home/jdc/git/rwhaskell/ch1/toascii.sed substitute/haskell/
-cp /usr/local/plan9/font/times/latin1.7a.font typing/plan9/unicoper.font
-cp /usr/local/plan9/lib/keyboard typing/plan9/
-find | grep -v '\.git'
-|fmt -w 72 |sed 's,$,  ,'
-|sort|uniq
-
-git status
-git add .
-git commit -a -m 'add ≟ to discussion and test haskell definition'
-git push origin master
-
-for(f in operator/*){
-	grep : $f | grep -v http | sed -n 's,(^[A-Za-z ]+): ([^.]+),\2 for \1,p' | tr '[A-Z]' '[a-z]' | sed 's/$/,/' | grep -v unicode
-}
-f          1           4           0         420  98.1521739 
-          4          64         420           0           0 /home/jdc/git/unicoper/kanban Del Snarf Undo | Look 
+# On branch master
+# Changed but not updated:
+#   (use "git add <file>..." to update what will be committed)
+#   (use "git checkout -- <file>..." to discard changes in working directory)
+#
+#	modified:   README.md
+#	modified:   acme.dump
+#	modified:   "define/haskell/UnicodeOperators.\342\204\223hs"
+#	modified:   guide
+#	modified:   kanban
+#	modified:   operator/relational
+#
+no changes added to commit (use "git add" and/or "git commit -a")
+[master 69683d5] add ≟ to discussion and test haskell definition
+ 6 files changed, 85 insertions(+), 19 deletions(-)
+To git@github.com:catenate/unicoper.git
+   b2353d8..69683d5  master -> master
+# On branch master
+# Changed but not updated:
+#   (use "git add <file>..." to update what will be committed)
+#   (use "git checkout -- <file>..." to discard changes in working directory)
+#
+#	modified:   README.md
+#
+no changes added to commit (use "git add" and/or "git commit -a")
+[master d073503] fix readme line length
+ 2 files changed, 7 insertions(+), 7 deletions(-)
+To git@github.com:catenate/unicoper.git
+   69683d5..d073503  master -> master
+f          1           4          82          82   4.1304348 
+          4          51         584           0           0 /home/jdc/git/unicoper/guide Del Snarf Undo | Look 
+f          1           5         783         783  94.0217391 
+          5          64         783           0           0 /home/jdc/git/unicoper/kanban Del Snarf Undo | Look 
+F          1           3          86         176  96.0869565         176 
+         71          25         176           0           0 +Errors Del Snarf | Look 
+can't open /home/jdc/git/unicoper/discuss/language/haskell: No such file or directory
+no auto-Put of /home/jdc/git/unicoper/discuss/language/haskell: No such file or directory
+F          1           4         311         324  98.1521739         324 
+         73          63         324           0           0 /home/jdc/git/unicoper/define/haskell/+Errors Del Snarf | Look 
+3c3,11
+< > module UnicodeOperators where
+---
+> ASCII	Unicode alternative	Code point	Name
+> ::	::	0x2237	PROPORTION
+> =>	⇒	0x21D2	RIGHTWARDS DOUBLE ARROW
+> forall	∀	0x2200	FOR ALL
+> ->	→	0x2192	RIGHTWARDS ARROW
+> <-	←	0x2190	LEFTWARDS ARROW
+> ..	…	0x22EF	MIDLINE HORIZONTAL ELLIPSIS
+> 
+> > module Unicoper where
+diff: exit 1

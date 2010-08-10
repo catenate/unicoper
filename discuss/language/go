@@ -1,0 +1,10 @@
+nb golang sed gofmt wishlist
+20100203.  "←" or Unicode Arrow 0x2190 to mean the same as "<-".
+Golang-nuts.
+http://groups.google.com/group/golang-nuts/browse_thread/thread/502a754f5541a61/63a0bfb11a958a7f
+
+
+nb golang gofmt scanner patch wishlist
+Catena, J. -20100210.  Update Go scanner to accept non-ASCII operators.
+Software Tools.
+http://swtools.wordpress.com/2010/02/10/update-go-scanner-to-accept-non-ascii-operators/

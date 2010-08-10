@@ -1,0 +1,99 @@
+nb unicoper scala support
+@Missing_Faktor: @remeniuk ~@catenate has done it for C, Go, Haskell and
+Ruby: http://goo.gl/HL7Q; We can extend it for Scala.  :)
+
+@scalatutorial: RT
+
+@catenate: @Missing_Faktor @remeniuk Happy to host in unicoper those
+scala files, or point to your project.  … Added 1-char =?  to texts &
+haskell defs.
+
+@catenate: @Missing_Faktor Found some New Year's posts on unicode
+operators in Scala by Tim: http://bit.ly/d1QAR0
+
+
+nb scala implement less than equal ≤
+Tim.  20091229.  Aliasing <= method to ≤ (\u2264) for all Ordered[T].
+http://scala-programming-language.1934581.n4.nabble.com/Aliasing-method-to-u2264-for-all-Ordered-T-td1944377.html#a1944377
+
+Tim:
+
+	class LiterateOrdered[T](x: Ordered[T]) {
+		def ≤(y: T): Boolean = x <= y
+		def ≥(y: T): Boolean = x >= y
+	}
+	implicit def orderedToLiterateOrdered[T <% Ordered[T]](xs: T) = new LiterateOrdered(xs)
+	
+	val x:Int = 1
+	val y:Long = 1L
+	assert(x ≤ y)	// fails to compile
+
+Daniel Sobral: One fundamental problem with this is that expected
+operator priority won't work.
+
+
+nb scala standard reserve double arrow
+Odersky, M. et al.  -2005116.  Chapter B: Implementation status.
+The Scala language specification, draft v1.0.
+The unicode operator “⇒” (§1.1) is not yet recognized; you need to use
+the two-character ASCII equivalent “=>” instead.
+
+
+nb scala unicode operator scalaz wishlist
+Tim.  20091230.  More unicode alternatives for ASCII operators?
+Scala programming language: Scala debate.
+http://scala-programming-language.1934581.n4.nabble.com/user/UserNodes.jtp?user=32072
+http://scala-programming-language.1934581.n4.nabble.com/More-unicode-alternatives-for-ASCII-operators-td2008146.html
+
+Tim.  The following table shows operators that are obvious ASCII
+approximations (e.g.  they are effectively ASCII art renderings of real
+symbols):
+
+	=>  ⇒   // implemented
+	<-  ←   // implemented
+	->  →   // implemented
+	==  ⩵
+	>>  ≫
+	<<  ≪
+	>>> ⋙
+	>=  ≥
+	<=  ≤
+	::  ∷
+
+The following are more debatable.  The ASCII characters aren't graphical
+approximations, but instead are idiomatic equivalents to their
+mathematical symobols:
+
+	*   ×   multiplication  // this one's probably an ASCII approximation
+	/   ÷   division
+	!   ¬   logical negation
+	^   ⊕   exclusive or
+	!=  ≠   not equal
+
+Jörg Mittag: I understood Tim's suggestion to either mean: hardwire the
+Unicode operators into the grammar as simple aliases for their ASCII
+counterparts (basically creating the exact same tokens / AST nodes); or
+leave them as user-definable operators (as they are now) but add them to
+the precedence table at the same level as their ASCII counterparts.
+I can also see a third (possibly intermediate) solution: a pretty-
+printer similar to Emacs' pretty-lambda¹ which leaves the source files
+as-is, but displays the operators pretty-printed in IDEs, text editors,
+source listings, slides and so on.  The ultimate solution would of
+course be user-defined precedence or even greater syntactic freedom.
+But then again, Scala is neither Fortress nor Perl6 nor Ioke nor Lisp.
+ ¹ http://EmacsWiki.Org/PrettyLambda/
+
+Jason Zaugg: There are two possible changes.  I'm pretty sure you're
+proposing the first only.  1.  Adjusting the precedence and fixity rules
+to allow the unicode alternatives to associate in the same manner as
+their ASCII fore-fathers.  2.  Adding synonyms through the core types
+and standard libraries, e.g.  Any.≠  From the original list, I suggest to
+remove ⋙ and to add ≟.
+
+
+nb scala programming unicode category sm so
+Martin Odersky, M.  20070613.  Programming in Scala, draft.
+http://www.scala-lang.org/downloads/distrib/files/website/doc/ProgrammingInScala.pdf
+
+opchar ::= “all other characters in\u0020-007F and Unicode categories
+Sm, So except parentheses ([]) and periods”

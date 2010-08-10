@@ -1,0 +1,81 @@
+nb unicoper announce
+@catenate: http://j.mp/unicoper: Beautiful operators for C-influenced
+programming languages.  New project ties together several of my interests.
+
+@Missing_Faktor: Awesome! RT
+
+
+nb unicoper logical bitwise and or distinguish
+@Missing_Faktor: @catenate Like the project.  The operators for logical
+and/or and bitwise and/or are not easily distinguishable.
+
+@catenate: @Missing_Faktor They're the same symbol, other than weight,
+and perhaps slant angle.  Used weight of xor to decide weight of bitwise ops.
+
+@Missing_Faktor: @catenate I'd prefer to have methods named like bitand,
+bitor etc for bitwise ops.  I don't think they're important enough to
+assign mathematical symbols.
+
+@catenate: @Missing_Faktor If languages will use operators for bitwise
+operations, I'd like to see them consistent, like math symbols, and correct.
+
+
+nb unicoper test equal ≟ =? scalaz
+@Missing_Faktor: @catenate Also, for "equal", you could use ≟ instead of =?.
+
+@catenate: @Missing_Faktor That was actually my first thought, and did make it into
+the description.  Problem with that symbol is ? is really small.
+
+@catenate: @Missing_Faktor It would be great if there was some kind of
+horizontally-joined ?= or ?= symbol, for a bigger ?, but I haven't seen one.
+
+@Missing_Faktor: @catenate Scalaz uses it and users of Scalaz don't seem
+to be complaining about `?` being small.
+
+@catenate: @Missing_Faktor Okay, that's a decent enough precedent.
+I'll include that form and =?, but probably prefer =?  since font size
+not an issue.
+
+@Missing_Faktor: @catenate Yeah, that'd be good.  I think Scalaz also
+provides `=?` as an alternative to `≟` symbol.  :)
+
+@catenate: @Missing_Faktor @remeniuk Added 1-char =?  to texts & haskell defs.
+
+
+nb unicoper apl special operator
+@kaleidic: New project by @catenate seems ironic because APL's use of special
+characters has been so reviled by so many.  http://j.mp/unicoper
+
+@clathwell: RT
+
+@catenate: @kaleidic @clathwell Trying to avoid new special operators. Would
+rather get programming languages to accept symbols taught in grade school.
+
+@kaleidic: @catenate Cementing prior notation is less interesting to me
+than smoothing the adoption of improvements.  Big-sigma, eg, is a mess.
+
+@catenate: @kaleidic Big job to mess with languages' grammar.  Exponent is
+a good example: many notations, all wrong IMO, except Algol and C64 Basic.  ;)
+
+@catenate: @kaleidic If we can improve Big-sigma notation by a better
+symbol, great, but I thought it needs var, lower limit, upper limit, expression.
+
+@catenate: @kaleidic Wikipedia kindly lays out the summation-operator mess:
+http://bit.ly/djMNQd But this is a grammar problem, much more complicated.
+
+@catenate: @kaleidic I mean to say that exponentiation is a good example of
+a problem unicoper can tackle, because it's always just an infix operator.
+
+
+nb operator syntax exception fixed set
+@kaleidic: @catenate @Missing_Faktor I'm confused as to what count as
+"operators" in prog langs.  Must they be syntactic exceptions and a
+fixed set?
+
+@kaleidic: @catenate @Missing_Faktor Then again, since you're
+restraining this effort to C-like languages, there's presumably no
+ambiguity here.
+
+@catenate: @kaleidic Pretty much bypassing argument whether operators
+should be symbols or words.  If they're symbols, I say accept pretty
+UTF-8 ones.

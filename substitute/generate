@@ -1,0 +1,4 @@
+grep c trmap | sed -f tr.sed > c/toascii.sed
+grep go trmap | sed -f tr.sed > go/toascii.sed
+grep hs trmap | sed -f tr.sed > haskell/toascii.sed
+grep rb trmap | sed -f tr.sed > ruby/toascii.sed

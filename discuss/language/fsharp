@@ -1,0 +1,57 @@
+nb f# justify unicode symbol usage wishlist
+Ginn, M.  20090721.  If Ascii operators are definable, why not
+Unicode symbols?  Stack overflow.
+http://stackoverflow.com/questions/1158082/if-ascii-operators-are-definable-why-not-unicode-symbols
+
+Guy Steele pointed out in Communications of the ACM that "*" was a
+forced choice when it was adopted from Ascii as multiply, but my
+software works in Unicode, so I'm not tethered to Ascii anymore.  ….
+Part of localization includes local programmers.  Why limit the set of
+operators that can be defined in F#? It isn’t orthogonal to C#'s and
+F#'s acceptance of many Unicode IsLetter in identifiers.  ….  Also, F#
+is likely to be used for symbolic manipulation of problems from logic,
+math, physicists, etc.  It makes work much easier if there’s a direct
+mapping into the language of the basic operators.  ….
+
+	Logic: ∀ ∃ ⇒
+	Math: ∑ ∫ ∂
+	Group theory: ≤ ≥ ∈ ∉
+	Set theory: ⊆ ⊇ ⊃ ∪ ∩
+	Tensors: ⊗
+
+It’s trivial to cobble up a translator that takes Unicode-operator F#
+source and maps it, line-by-line, to Ascii-operator F# source.  But when
+debugging, how do I make sure the programmer still sees their
+untranslated source?  And that they can see variable values.  Operators
+and converts them is trivial.  But how do I ensure the translation is
+what gets compiled, while the programmer sees their own source?  If I
+map line-for-line correctly, how do I ensure they can still point at a
+variable and see its value?
+
+
+nb f# typing example unicode support ctp wishlist
+Asher, D. -20070509.  Re: Does anyone miss Unicode in the CTP?
+Icosahedron example….  hubFS: THE place for F#.
+http://cs.hubfs.net/forums/thread/9690.aspx
+
+Danny Asher: MichaelGG - thanks for digging in here. 
+Unicode characters are readily available from:
+
+	Start -> Run -> charmap
+
+or:
+
+	Programs -> Accessories > System Tools  -> Character Map
+
+Once a Unicode character is used it is a simple task to copy/paste it
+around.  For code that is write once, read many, carefully used Unicode
+can significantly enhance readability.  I would hope that, at the very
+least, the Unicode category Sm - Symbol, math would be enabled for our
+favourite mathematical language.  Laurent - great to hear it's to be
+reintroduced!  The burden is now upon us to communicate to the FSharp
+team we'd like to use Unicode.  Personally I'd like the team to be bold
+in opening up Unicode categories, but I do understand that careful
+consideration needs to be given to integration with the .NET platform.
+
+Danny Asher: I'd still love to be able to use the ± as well as the
+common √, ∫, ∏, •, ≤, ≥, € symbols.
